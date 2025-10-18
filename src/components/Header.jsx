@@ -27,7 +27,7 @@ function Header() {
           fontFamily: theme.fonts.family.heading,
           fontWeight: 'bold',
         }}>
-          Gospel Truth
+          Purpose Of Life
         </Link>
         
         <div style={{
@@ -38,7 +38,7 @@ function Header() {
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/purpose" className="nav-link">Purpose</Link>
           <Link to="/good-evil" className="nav-link">Good & Evil</Link>
-          <Link to="/gospel" className="nav-link">Gospel</Link>
+          <Link to="/gospel" className="nav-link">Good News</Link>
         </div>
       </nav>
     </header>

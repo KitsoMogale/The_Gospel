@@ -6,7 +6,7 @@ export const theme = {
     background: '#F5F5F5',
     cardBg: '#FFFFFF',
     text: '#333333',
-    textLight: '#666666',
+    textLight: '#5f5e5eff',
     accent: '#FF5722',
     border: '#E0E0E0',
     shadow: 'rgba(0, 0, 0, 0.08)',

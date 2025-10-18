@@ -186,7 +186,7 @@ const subtopics = [
       },
       {
         type: 'callout',
-        content: 'Jesus didn\'t just die for the world—He died for you. He took your place so you could take His: righteous, forgiven, beloved. At the cross, God shouted to the world: "You are worth saving."'
+        content: 'Jesus didn\'t just die for the world—He died for you. He took your place so you could take His righteousness. At the cross, God shouted to the world: "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future"'
       }
     ],
     image: null,
@@ -351,7 +351,7 @@ const subtopics = [
 function Gospel() {
   return (
     <Section 
-      title="The Gospel"
+      title="The Good News"
       intro="A Message of Hope and Redemption"
       subtopics={subtopics}
     />

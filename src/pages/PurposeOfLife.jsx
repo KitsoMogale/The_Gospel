@@ -1,4 +1,6 @@
 import Section from '../components/Section';
+import communities from '../assets/images/communities.png'; // Update path as needed
+import adamandeve from '../assets/images/adam_and_eve.png'; // Update path as needed
 
 const subtopics = [
   {
@@ -58,7 +60,7 @@ const subtopics = [
         content: 'While these can be good things, they can also feel shallow when suffering comes, or when success doesn\'t bring the satisfaction we expected.'
       }
     ],
-    image: null,
+    image: communities,
     audio: null
   },
   {
@@ -139,7 +141,7 @@ const subtopics = [
         content: 'So our purpose is not only to know God but to make Him known—to live in such a way that others can see His love through us.'
       }
     ],
-    image: null,
+    image: adamandeve,
     audio: null
   },
   {
