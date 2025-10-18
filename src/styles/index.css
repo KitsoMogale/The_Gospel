@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #4CAF50;
+  --color-secondary: #2196F3;
+  --color-background: #F5F5F5;
+  --color-text: #333333;
+  --color-accent: #FF5722;
+  --color-error: #F44336;
+  --font-heading: serif;  /* Or 'Georgia, serif' for specificity */
+  --font-body: sans-serif;  /* Or 'Arial, sans-serif' */
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+/* Resets and globals */
+h1, h2 { font-family: var(--font-heading); }
+/* Component-specific classes if not using modules */
+.section { padding: var(--spacing-large); }
+
+@media (max-width: 768px) {
+  .section { padding: var(--spacing-medium); }
+  /* Stack flex items in Subtopic */
+}
