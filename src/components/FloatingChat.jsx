@@ -118,7 +118,7 @@ Always maintain a biblical perspective while being respectful and kind.`
               <span className="chat-header-icon">💭</span>
               <div>
                 <h3 className="chat-header-title">Questions?</h3>
-                <p className="chat-header-subtitle">Ask about {pageTitle}</p>
+                <p className="chat-header-subtitle">Ask Kitso about {pageTitle}</p>
               </div>
             </div>
             <button 
