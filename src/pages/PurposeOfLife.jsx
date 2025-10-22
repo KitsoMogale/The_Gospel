@@ -1,6 +1,9 @@
 import Section from '../components/Section';
 import communities from '../assets/images/communities.png'; // Update path as needed
 import adamandeve from '../assets/images/adam_and_eve.png'; // Update path as needed
+import famPraying from '../assets/images/famPraying.jpg'; // Update path as needed
+import purpose1Audio from '../assets/audio/purpose_1.mp3';
+import purpose2Audio from '../assets/audio/purpose_2.mp3';
 
 const subtopics = [
   {
@@ -41,7 +44,7 @@ const subtopics = [
       },
       {
         type: 'reflection',
-        content: 'These answers provide a sense of cosmic purpose—but they often place the burden on human effort, leaving people wondering if they\'ve done enough.'
+        content: 'These answers provide a sense of cosmic purpose—but they often place the burden on human effort, leaving people wondering if they\'ve done enough, in other words, \'Am I going to Heaven or not?\''
       },
       {
         type: 'heading',
@@ -174,7 +177,7 @@ const subtopics = [
       },
       {
         type: 'paragraph',
-        content: 'The Bible doesn\'t just give a set of ideas—it points to real events in history. Jesus lived, died, and rose again in a way that was seen by eyewitnesses and recorded faithfully (1 Corinthians 15:3–8).'
+        content: 'The Bible doesn\'t just give a set of ideas—it points to real events in history. Jesus lived, died, and rose again in a way that was seen by eyewitnesses and recorded faithfully (1 Corinthians 15:3–8). Even the current timeline of history (this year being 2025 in all nations of the world) are counted from the estimated birth of Jesus Christ — the “AD” or “CE” system (“Anno Domini” / “Common Era”), meaning the year of your birth is based on the globally accepted fact that Christ walked the Earth, giving additional credibility to the historic record of the Bible.'
       },
       {
         type: 'verse',
@@ -216,17 +219,21 @@ const subtopics = [
         reference: 'Jeremiah 29:13'
       }
     ],
-    image: null,
+    image: famPraying,
     audio: null
   }
 ];
 
 function PurposeOfLife() {
+
+  const audioFiles = [purpose1Audio, purpose2Audio];
+
   return (
     <Section 
       title="The Purpose of Life" 
       intro="Everyone, everywhere, wonders about the same big question: 'Why am I here?'"
       subtopics={subtopics} 
+      audioFiles={audioFiles}
     />
   );
 }

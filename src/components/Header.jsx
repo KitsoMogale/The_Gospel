@@ -1,44 +1,57 @@
 import { Link } from 'react-router-dom';
 import { theme } from '../styles/Theme';
+import { useState } from 'react';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header style={{
-      background: `linear-gradient(135deg, ${theme.colors.primary} 0%, ${theme.colors.primaryDark} 100%)`,
-      padding: '1.5rem 2rem',
-      boxShadow: theme.shadows.small,
-      position: 'sticky',
-      top: 0,
-      zIndex: 1000,
-    }}>
-      <nav style={{
-        maxWidth: '1200px',
-        margin: '0 auto',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        flexWrap: 'wrap',
-        gap: '1rem',
-      }}>
-        <Link to="/" style={{
-          color: 'white',
-          textDecoration: 'none',
-          fontSize: '1.75rem',
-          fontFamily: theme.fonts.family.heading,
-          fontWeight: 'bold',
-        }}>
-          Purpose Of Life
+    <header className="header">
+      <nav className="nav-container">
+        <Link to="/" className="logo">
+          <span className="logo-icon">✝</span>
+          <span className="logo-text">Purpose Of Life</span>
         </Link>
         
-        <div style={{
-          display: 'flex',
-          gap: '1.5rem',
-          flexWrap: 'wrap',
-        }}>
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/purpose" className="nav-link">Purpose</Link>
-          <Link to="/good-evil" className="nav-link">Good & Evil</Link>
-          <Link to="/gospel" className="nav-link">Good News</Link>
+        {/* Mobile Menu Toggle */}
+        <button 
+          className="mobile-menu-toggle"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
+        </button>
+
+        {/* Navigation Links */}
+        <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          <Link 
+            to="/" 
+            className="nav-link"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link 
+            to="/purpose" 
+            className="nav-link"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Purpose
+          </Link>
+          <Link 
+            to="/good-evil" 
+            className="nav-link"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Good & Evil
+          </Link>
+          <Link 
+            to="/gospel" 
+            className="nav-link featured"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Good News
+          </Link>
         </div>
       </nav>
     </header>

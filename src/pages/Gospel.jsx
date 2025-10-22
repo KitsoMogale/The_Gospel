@@ -1,6 +1,11 @@
 // Gospel.jsx - Complete with rich content from PDF
 
 import Section from '../components/Section';
+import adamAndEve from '../assets/images/adamAndEve.png'; // Update path as needed
+import jesusPicture from '../assets/images/jesusPicture.png'; // Update path as needed
+import itIsFinished from '../assets/images/itIsFinished.png'; // Update path as needed
+import jerusalem from '../assets/images/jerusalem.jpg'; // Update path as needed
+import gospelAudio from '../assets/audio/gospel.wav';
 
 const subtopics = [
   {
@@ -89,7 +94,7 @@ const subtopics = [
         content: 'Before anyone can truly grasp the joy of salvation, they must first understand their need for it. The story of Adam\'s sin isn\'t just ancient history—it\'s the story of every human heart. But the story doesn\'t end there. Into this darkness, God Himself stepped in.'
       }
     ],
-    image: null,
+    image: adamAndEve,
     audio: null
   },
   {
@@ -189,7 +194,7 @@ const subtopics = [
         content: 'Jesus didn\'t just die for the world—He died for you. He took your place so you could take His righteousness. At the cross, God shouted to the world: "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future"'
       }
     ],
-    image: null,
+    image: jesusPicture,
     audio: null
   },
   {
@@ -272,7 +277,7 @@ const subtopics = [
         content: 'Grace means you don\'t have to try to earn what Jesus already bought for you. Faith means you can finally stop running and rest in what He\'s done. Salvation is not about working your way up to God—it\'s about God coming down to you, and inviting you to trust Him completely.'
       }
     ],
-    image: null,
+    image: itIsFinished,
     audio: null
   },
   {
@@ -343,7 +348,7 @@ const subtopics = [
         content: 'The story ends—and begins again—with God dwelling with His people. That\'s the heartbeat of the Gospel: we were made for Him, redeemed by Him, and destined to be with Him forever. Every trial, every tear, and every act of faith is leading toward that day. Until then, we walk in hope—knowing the best is yet to come.'
       }
     ],
-    image: null,
+    image: jerusalem,
     audio: null
   }
 ];
@@ -354,6 +359,8 @@ function Gospel() {
       title="The Good News"
       intro="A Message of Hope and Redemption"
       subtopics={subtopics}
+      audioFiles={[gospelAudio]}
+
     />
   );
 }

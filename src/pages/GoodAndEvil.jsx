@@ -1,4 +1,9 @@
 import Section from '../components/Section';
+import slavery from '../assets/images/slavery.jpg'; // Update path as needed
+import bloodOnHands from '../assets/images/bloodOnHands.jpg'; // Update path as needed
+import judge1 from '../assets/images/judge1.png'; // Update path as needed
+import goodbad from '../assets/images/Good_Bad.png'; // Update path as needed
+import goodEvilAudio from '../assets/audio/good_evil.wav';
 
 const subtopics = [
   {
@@ -72,7 +77,7 @@ const subtopics = [
         content: 'This is sobering: evil is not just “what bad people do.” It’s something every human wrestles with.'
       }
     ],
-    image: null,
+    image: goodbad,
     audio: null
   },
   {
@@ -146,6 +151,134 @@ const subtopics = [
     audio: null
   },
   {
+    title: 'The Evil in the World Throughout History',
+    intro: 'When we look at the world—and our own hearts—it’s not hard to see that something is deeply wrong. The Bible calls this sin, and history shows how far its effects go.',
+    sections: [
+      {
+        type: 'heading',
+        content: 'Biblical Examples'
+      },
+      {
+        type: 'paragraph',
+        content: 'The Bible is honest about humanity’s failures. From the very beginning, we see how quickly sin spreads and how destructive it becomes:'
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Cain and Abel (Genesis 4)—Jealousy leads Cain to murder his own brother.',
+          'The Flood (Genesis 6)—God describes the world as “filled with violence,” and every thought of man’s heart as “only evil continually.”',
+          'Tower of Babel (Genesis 11)—Humanity unites, but not to worship God—they rebel and try to make a name for themselves apart from Him.',
+          'Israel’s repeated rebellion—Even God’s chosen people repeatedly turn from Him, showing that sin runs deep in all humanity.'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Historical Examples'
+      },
+      {
+        type: 'paragraph',
+        content: 'Evil isn’t just an ancient story—it’s a repeating theme throughout history.'
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Genocides—From the Holocaust to Rwanda, entire populations have been targeted and wiped out.',
+          'Slavery & Oppression—Humans have exploited others for profit and power, often on a massive scale.',
+          'Wars & Corruption—Millions have died in wars driven by greed, pride, or hatred.'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'These events remind us that evil is not just individual—it is often systemic and global.'
+      },
+      {
+        type: 'heading',
+        content: 'Personal Level'
+      },
+      {
+        type: 'paragraph',
+        content: 'It’s easy to point to “big evils” in history, but Jesus reminds us to look inward too.'
+      },
+      {
+        type: 'verse',
+        text: 'For from within, out of the heart of man, come evil thoughts, sexual immorality, theft, murder, adultery, coveting, wickedness, deceit, sensuality, envy, slander, pride, foolishness.',
+        reference: 'Mark 7:21–22'
+      },
+      {
+        type: 'paragraph',
+        content: 'Evil is not just “out there”—it lives inside us. Our pride, greed, anger, and selfishness hurt others every day.'
+      }
+    ],
+    image: slavery,
+    audio: null
+  },
+  {
+    title: 'Why Bad Things Happen',
+    intro: 'One of the hardest questions we face in life is: “If God is good, why is there so much suffering in the world?” The Bible doesn’t ignore this question—in fact, it speaks to it again and again. Here’s how Scripture helps us understand why bad things happen.',
+    sections: [
+      {
+        type: 'heading',
+        content: 'Because of a Broken World (The Fall)'
+      },
+      {
+        type: 'paragraph',
+        content: 'When Adam and Eve sinned in the Garden of Eden, they didn’t just break a rule—they broke the world.'
+      },
+      {
+        type: 'verse',
+        text: 'Cursed is the ground because of you; through painful toil you will eat food from it all the days of your life.',
+        reference: 'Genesis 3:17'
+      },
+      {
+        type: 'paragraph',
+        content: 'Sin brought death, pain, disease, and suffering into the world. Creation itself was affected—everything from natural disasters to aging is part of a creation that is now “groaning” (Romans 8:20–22).'
+      },
+      {
+        type: 'heading',
+        content: 'Because of Human Choice (Free Will)'
+      },
+      {
+        type: 'paragraph',
+        content: 'God gave humans free will—the ability to choose love, obedience, and goodness. . . but also the ability to choose selfishness, disobedience, and evil.'
+      },
+      {
+        type: 'paragraph',
+        content: 'Much of the pain we see in the world—wars, abuse, oppression—comes from humans misusing their freedom. God could stop every evil act before it happens, but that would also remove our ability to truly choose Him. Real love requires real choice.'
+      },
+      {
+        type: 'heading',
+        content: 'Because We Live in a Battle'
+      },
+      {
+        type: 'paragraph',
+        content: 'The Bible describes a spiritual battle between good and evil that is still going on. There is an enemy—Satan—who seeks to destroy (John 10:10, 1 Peter 5:8). This means some suffering comes from forces of evil actively working against God’s purposes.'
+      },
+      {
+        type: 'heading',
+        content: 'Because God Has a Bigger Plan'
+      },
+      {
+        type: 'paragraph',
+        content: 'Even though bad things happen, God is not powerless—and He is not absent.'
+      },
+      {
+        type: 'verse',
+        text: 'And we know that in all things God works for the good of those who love him, who have been called according to his purpose.',
+        reference: 'Romans 8:28'
+      },
+      {
+        type: 'paragraph',
+        content: 'God can take even the worst events and use them to bring about something good—to grow our character, to draw people to Himself, and to show His glory.'
+      },
+      {
+        type: 'paragraph',
+        content: 'The cross of Jesus is the ultimate example: the worst injustice in history (the crucifixion of the innocent Son of God) became the way for salvation to come to the world.'
+      }
+    ],
+    image: null,
+    audio: null
+  },
+    {
     title: 'What’s Wrong With Us?',
     intro: 'Knowing good and evil is not just about being “good citizens.” It’s about knowing how life was meant to be lived and how to walk with God. But—and this is crucial—knowing good and evil does not mean we always do what’s right. In fact, most of us know the pain of doing what we know is wrong.',
     sections: [
@@ -221,135 +354,7 @@ const subtopics = [
         content: 'Only God can transform the heart. Only His Spirit can free us from the cycle of knowing good, desiring good, but doing evil.'
       }
     ],
-    image: null,
-    audio: null
-  },
-  {
-    title: 'The Evil in the World Throughout History',
-    intro: 'When we look at the world—and our own hearts—it’s not hard to see that something is deeply wrong. The Bible calls this sin, and history shows how far its effects go.',
-    sections: [
-      {
-        type: 'heading',
-        content: 'Biblical Examples'
-      },
-      {
-        type: 'paragraph',
-        content: 'The Bible is honest about humanity’s failures. From the very beginning, we see how quickly sin spreads and how destructive it becomes:'
-      },
-      {
-        type: 'bullets',
-        items: [
-          'Cain and Abel (Genesis 4)—Jealousy leads Cain to murder his own brother.',
-          'The Flood (Genesis 6)—God describes the world as “filled with violence,” and every thought of man’s heart as “only evil continually.”',
-          'Tower of Babel (Genesis 11)—Humanity unites, but not to worship God—they rebel and try to make a name for themselves apart from Him.',
-          'Israel’s repeated rebellion—Even God’s chosen people repeatedly turn from Him, showing that sin runs deep in all humanity.'
-        ]
-      },
-      {
-        type: 'heading',
-        content: 'Historical Examples'
-      },
-      {
-        type: 'paragraph',
-        content: 'Evil isn’t just an ancient story—it’s a repeating theme throughout history.'
-      },
-      {
-        type: 'bullets',
-        items: [
-          'Genocides—From the Holocaust to Rwanda, entire populations have been targeted and wiped out.',
-          'Slavery & Oppression—Humans have exploited others for profit and power, often on a massive scale.',
-          'Wars & Corruption—Millions have died in wars driven by greed, pride, or hatred.'
-        ]
-      },
-      {
-        type: 'paragraph',
-        content: 'These events remind us that evil is not just individual—it is often systemic and global.'
-      },
-      {
-        type: 'heading',
-        content: 'Personal Level'
-      },
-      {
-        type: 'paragraph',
-        content: 'It’s easy to point to “big evils” in history, but Jesus reminds us to look inward too.'
-      },
-      {
-        type: 'verse',
-        text: 'For from within, out of the heart of man, come evil thoughts, sexual immorality, theft, murder, adultery, coveting, wickedness, deceit, sensuality, envy, slander, pride, foolishness.',
-        reference: 'Mark 7:21–22'
-      },
-      {
-        type: 'paragraph',
-        content: 'Evil is not just “out there”—it lives inside us. Our pride, greed, anger, and selfishness hurt others every day.'
-      }
-    ],
-    image: null,
-    audio: null
-  },
-  {
-    title: 'Why Bad Things Happen',
-    intro: 'One of the hardest questions we face in life is: “If God is good, why is there so much suffering in the world?” The Bible doesn’t ignore this question—in fact, it speaks to it again and again. Here’s how Scripture helps us understand why bad things happen.',
-    sections: [
-      {
-        type: 'heading',
-        content: 'Because of a Broken World (The Fall)'
-      },
-      {
-        type: 'paragraph',
-        content: 'When Adam and Eve sinned in the Garden of Eden, they didn’t just break a rule—they broke the world.'
-      },
-      {
-        type: 'verse',
-        text: 'Cursed is the ground because of you; through painful toil you will eat food from it all the days of your life.',
-        reference: 'Genesis 3:17'
-      },
-      {
-        type: 'paragraph',
-        content: 'Sin brought death, pain, disease, and suffering into the world. Creation itself was affected—everything from natural disasters to aging is part of a creation that is now “groaning” (Romans 8:20–22).'
-      },
-      {
-        type: 'heading',
-        content: 'Because of Human Choice (Free Will)'
-      },
-      {
-        type: 'paragraph',
-        content: 'God gave humans free will—the ability to choose love, obedience, and goodness. . . but also the ability to choose selfishness, disobedience, and evil.'
-      },
-      {
-        type: 'paragraph',
-        content: 'Much of the pain we see in the world—wars, abuse, oppression—comes from humans misusing their freedom. God could stop every evil act before it happens, but that would also remove our ability to truly choose Him. Real love requires real choice.'
-      },
-      {
-        type: 'heading',
-        content: 'Because We Live in a Battle'
-      },
-      {
-        type: 'paragraph',
-        content: 'The Bible describes a spiritual battle between good and evil that is still going on. There is an enemy—Satan—who seeks to destroy (John 10:10, 1 Peter 5:8). This means some suffering comes from forces of evil actively working against God’s purposes.'
-      },
-      {
-        type: 'heading',
-        content: 'Because God Has a Bigger Plan'
-      },
-      {
-        type: 'paragraph',
-        content: 'Even though bad things happen, God is not powerless—and He is not absent.'
-      },
-      {
-        type: 'verse',
-        text: 'And we know that in all things God works for the good of those who love him, who have been called according to his purpose.',
-        reference: 'Romans 8:28'
-      },
-      {
-        type: 'paragraph',
-        content: 'God can take even the worst events and use them to bring about something good—to grow our character, to draw people to Himself, and to show His glory.'
-      },
-      {
-        type: 'paragraph',
-        content: 'The cross of Jesus is the ultimate example: the worst injustice in history (the crucifixion of the innocent Son of God) became the way for salvation to come to the world.'
-      }
-    ],
-    image: null,
+    image: bloodOnHands,
     audio: null
   },
   {
@@ -433,7 +438,7 @@ const subtopics = [
         content: 'For those who belong to Jesus, judgment day is not a day to fear—it’s the day all wrongs are made right, forever.'
       }
     ],
-    image: null,
+    image: judge1,
     audio: null
   },
   {
@@ -479,11 +484,13 @@ const subtopics = [
 ];
 
 function GoodAndEvil() {
+
   return (
     <Section 
       title="Good and Evil" 
       intro="Everyone, everywhere, wonders about the same big question: 'What are good and evil?' Across history, different cultures, religions, and thinkers have tried to answer it." 
-      subtopics={subtopics} 
+      subtopics={subtopics}
+      audioFiles={[goodEvilAudio]}
     />
   );
 }
