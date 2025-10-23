@@ -1,7 +1,7 @@
 // Gospel.jsx - Complete with rich content from PDF
 
 import Section from '../components/Section';
-import adamAndEve from '../assets/images/adamAndEve.png'; // Update path as needed
+import adamAndEve from '../assets/images/AdamAndEve.png'; // Update path as needed
 import jesusPicture from '../assets/images/jesusPicture.png'; // Update path as needed
 import itIsFinished from '../assets/images/itIsFinished.png'; // Update path as needed
 import jerusalem from '../assets/images/jerusalem.jpg'; // Update path as needed
