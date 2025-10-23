@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import PurposeOfLife from './pages/PurposeOfLife';
-import { theme } from './styles/Theme';
+import { theme } from './styles/theme';
 import './App.css';
 import GoodAndEvil from './pages/GoodAndEvil';
 import Gospel from './pages/Gospel';

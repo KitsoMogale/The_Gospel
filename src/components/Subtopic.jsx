@@ -1,6 +1,6 @@
 import ImageDisplay from './ImageDisplay';
 import AudioPlayer from './AudioPlayer';
-import { theme } from '../styles/Theme';
+import { theme } from '../styles/theme';
 
 function Subtopic({ title, intro, sections, image, audio }) {
   const renderSection = (section, index) => {

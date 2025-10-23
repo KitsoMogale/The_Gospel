@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { theme } from '../styles/Theme';
+import { theme } from '../styles/theme';
 import { useState } from 'react';
 
 function Header() {
