@@ -2,8 +2,8 @@ import Section from '../components/Section';
 import communities from '../assets/images/communities.png'; // Update path as needed
 import adamandeve from '../assets/images/adam_and_eve.png'; // Update path as needed
 import famPraying from '../assets/images/famPraying.jpg'; // Update path as needed
-import purpose1Audio from '../assets/audio/purpose_1.mp3';
-import purpose2Audio from '../assets/audio/purpose_2.mp3';
+import purpose1Audio from '../assets/audio/Purpose_1.mp3';
+import purpose2Audio from '../assets/audio/Purpose_2.mp3';
 
 const subtopics = [
   {

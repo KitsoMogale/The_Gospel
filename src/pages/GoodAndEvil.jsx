@@ -3,7 +3,7 @@ import slavery from '../assets/images/slavery.jpg'; // Update path as needed
 import bloodOnHands from '../assets/images/bloodOnHands.jpg'; // Update path as needed
 import judge1 from '../assets/images/judge1.png'; // Update path as needed
 import goodbad from '../assets/images/Good_Bad.png'; // Update path as needed
-import goodEvilAudio from '../assets/audio/good_evil.wav';
+import goodEvilAudio from '../assets/audio/Good_Evil.wav';
 
 const subtopics = [
   {

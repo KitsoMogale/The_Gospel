@@ -5,7 +5,7 @@ import adamAndEve from '../assets/images/adamAndEve.png'; // Update path as need
 import jesusPicture from '../assets/images/jesusPicture.png'; // Update path as needed
 import itIsFinished from '../assets/images/itIsFinished.png'; // Update path as needed
 import jerusalem from '../assets/images/jerusalem.jpg'; // Update path as needed
-import gospelAudio from '../assets/audio/gospel.wav';
+import gospelAudio from '../assets/audio/Gospel.wav';
 
 const subtopics = [
   {
