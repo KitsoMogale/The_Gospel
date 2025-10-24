@@ -14,7 +14,8 @@ function Section({ title, subtopics, intro, audioFiles }) {
     { path: '/', label: 'Home' },
     { path: '/purpose', label: 'Purpose of Life' },
     { path: '/good-evil', label: 'Good & Evil' },
-    { path: '/gospel', label: 'The Gospel' }
+    { path: '/gospel', label: 'The Gospel' },
+
   ];
 
   // Find current page index
@@ -97,6 +98,21 @@ function Section({ title, subtopics, intro, audioFiles }) {
             <span className="nav-arrow">→</span>
           </button>
         )}
+
+{location.pathname === '/gospel' && (
+    <button 
+      onClick={() => handleNavigation('/prayer')}
+      className="nav-button nav-button-next prayer-nav-button"
+    >
+      <div className="nav-button-content">
+        <span className="nav-button-label">Ready to Respond to the Good News?</span>
+        <span className="nav-button-title">Prayer of Salvation</span>
+        <span className="nav-arrow">→</span>
+      </div>
+      <span className="nav-arrow">🙏</span>
+    </button>
+  )}
+
       </div>
 
       {/* Floating Chat Button */}

@@ -115,7 +115,7 @@ Your goal: Help them realize their answer, while valuable, may not fully address
           <div className="hero-overlay"></div>
           <div className="hero-content">
             <h1 className="hero-title">
-              Welcome to Purpose Of Life
+              Welcome to FindingPurpose
             </h1>
             <p className="hero-subtitle">
               Discover the timeless message of hope, redemption, and eternal life through Jesus Christ

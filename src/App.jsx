@@ -7,6 +7,7 @@ import { theme } from './styles/theme';
 import './App.css';
 import GoodAndEvil from './pages/GoodAndEvil';
 import Gospel from './pages/Gospel';
+import Prayer from './pages/Prayer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/purpose" element={<PurposeOfLife />} />
             <Route path="/good-evil" element={<GoodAndEvil />} />
             <Route path="/gospel" element={<Gospel />} />
+            <Route path="/prayer" element={<Prayer />} />
           </Routes>
         </main>
         <Footer />
